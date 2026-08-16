@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 54" width="900" height="54">
-  <text x="0" y="30" fill="#C1121F" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="18" font-weight="700">02</text>
-  <text x="55" y="30" fill="#1F2328" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="18" font-weight="700" letter-spacing="2">CURRENT.MISSION</text>
-  <line x1="310" y1="30" x2="900" y2="30" stroke="#C1121F" stroke-width="2"/>
-  <line x1="0" y1="46" x2="900" y2="46" stroke="#D0D7DE" stroke-width="1"/>
-</svg>
