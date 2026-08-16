@@ -173,14 +173,14 @@ My personal portfolio and digital showcase. Where the public version of my work 
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=bhuvan5821n&show_icons=true&theme=transparent&title_color=C1121F&icon_color=C1121F&text_color=F5F5F5&border_color=30363d">
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=bhuvan5821n&show_icons=true&theme=transparent&title_color=C1121F&icon_color=C1121F&text_color=1F2328&border_color=D0D7DE">
-    <img src="https://github-readme-stats.vercel.app/api?username=bhuvan5821n&show_icons=true&theme=transparent&title_color=C1121F&icon_color=C1121F&text_color=F5F5F5&border_color=30363d" alt="GitHub Stats" width="49%">
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/stats/github-stats-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="./assets/stats/github-stats-light.svg">
+    <img src="./assets/stats/github-stats-dark.svg" alt="Bhuvan's GitHub Stats" width="49%">
   </picture>
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=bhuvan5821n&theme=transparent&ring=C1121F&fire=C1121F&currStreakLabel=C1121F&sideLabels=C1121F&dates=8b949e&border=30363d">
-    <source media="(prefers-color-scheme: light)" srcset="https://streak-stats.demolab.com/?user=bhuvan5821n&theme=transparent&ring=C1121F&fire=C1121F&currStreakLabel=C1121F&sideLabels=C1121F&dates=1F2328&border=D0D7DE">
-    <img src="https://streak-stats.demolab.com/?user=bhuvan5821n&theme=transparent&ring=C1121F&fire=C1121F&currStreakLabel=C1121F&sideLabels=C1121F&dates=8b949e&border=30363d" alt="GitHub Streak" width="49%">
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/stats/github-streak-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="./assets/stats/github-streak-light.svg">
+    <img src="./assets/stats/github-streak-dark.svg" alt="Bhuvan's GitHub Streak" width="49%">
   </picture>
 </p>
 

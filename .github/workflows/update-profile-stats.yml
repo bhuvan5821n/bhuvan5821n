@@ -1,0 +1,61 @@
+name: Update profile stats
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 3 * * *"
+  push:
+    paths:
+      - ".github/workflows/update-profile-stats.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Ensure stats directory exists
+        run: mkdir -p assets/stats
+
+      - name: Generate GitHub stats dark
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: stats
+          options: username=${{ github.repository_owner }}&show_icons=true&bg_color=00000000&title_color=C1121F&icon_color=C1121F&text_color=F5F5F5&border_color=30363D
+          path: assets/stats/github-stats-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate GitHub stats light
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: stats
+          options: username=${{ github.repository_owner }}&show_icons=true&bg_color=00000000&title_color=C1121F&icon_color=C1121F&text_color=1F2328&border_color=D0D7DE
+          path: assets/stats/github-stats-light.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate GitHub streak dark
+        uses: DenverCoder1/github-readme-streak-stats@main
+        with:
+          options: user=${{ github.repository_owner }}&theme=transparent&ring=C1121F&fire=C1121F&currStreakLabel=C1121F&sideLabels=C1121F&dates=8B949E&border=30363D&disable_animations=true
+          path: assets/stats/github-streak-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate GitHub streak light
+        uses: DenverCoder1/github-readme-streak-stats@main
+        with:
+          options: user=${{ github.repository_owner }}&theme=transparent&ring=C1121F&fire=C1121F&currStreakLabel=C1121F&sideLabels=C1121F&dates=1F2328&border=D0D7DE&disable_animations=true
+          path: assets/stats/github-streak-light.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit updated stats
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/stats/*.svg
+          git diff --cached --quiet || git commit -m "Update profile stats"
+          git push
