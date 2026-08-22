@@ -8,10 +8,6 @@
 
 <br>
 
-<p align="center">
-  <img src="./assets/laser/bhuvan-laser.svg" alt="Bhuvan animated laser-scan portrait" width="100%">
-</p>
-
 <p>
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="./assets/headers/about-me-dark.svg">
