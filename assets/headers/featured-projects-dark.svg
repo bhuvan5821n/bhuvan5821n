@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 54" width="900" height="54">
+  <text x="0" y="30" fill="#C1121F" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="18" font-weight="700">05</text>
+  <text x="55" y="30" fill="#F5F5F5" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="18" font-weight="700" letter-spacing="2">FEATURED PROJECTS</text>
+  <line x1="350" y1="30" x2="900" y2="30" stroke="#C1121F" stroke-width="2"/>
+  <line x1="0" y1="46" x2="900" y2="46" stroke="#30363D" stroke-width="1"/>
+</svg>
