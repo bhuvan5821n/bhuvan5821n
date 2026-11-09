@@ -328,7 +328,7 @@ Sleep is a valid debugging strategy.
   <a href="https://github.com/bhuvan5821n">
     <img src="https://img.shields.io/badge/GitHub-0D1117?style=for-the-badge&logo=github&logoColor=F5F5F5" alt="GitHub">
   </a>
-  <a href="https://instagram.com/bhuvan5821na">
+  <a href="https://instagram.com/bhuvan5821n">
     <img src="https://img.shields.io/badge/Instagram-C1121F?style=for-the-badge&logo=instagram&logoColor=F5F5F5" alt="Instagram">
   </a>
   <a href="mailto:reenareenar728@gmail.com">
